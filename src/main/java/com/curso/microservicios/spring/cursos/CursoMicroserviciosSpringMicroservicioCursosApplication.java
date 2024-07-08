@@ -8,7 +8,7 @@ import io.github.cdimascio.dotenv.Dotenv;
 
 @EnableEurekaClient
 @SpringBootApplication
-@EntityScan({"com.curso.microservicios.spring.app.generic.alumno.models.entity",
+@EntityScan({"com.curso.microservicios.spring.generic.alumnos.models.entity",
 	"com.curso.microservicios.spring.cursos.models.entity"})
 public class CursoMicroserviciosSpringMicroservicioCursosApplication {
 
