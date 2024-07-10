@@ -17,8 +17,8 @@ import javax.persistence.Table;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 
-import com.curso.microservicios.spring.examenes.models.entity.Examen;
 import com.curso.microservicios.spring.generic.alumnos.models.entity.Alumno;
+import com.curso.microservicios.spring.generic.examenes.models.entity.Examen;
 
 @Entity
 @Table(name = "cursos")

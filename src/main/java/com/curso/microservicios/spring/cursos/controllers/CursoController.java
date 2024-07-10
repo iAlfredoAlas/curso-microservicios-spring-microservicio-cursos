@@ -14,8 +14,8 @@ import org.springframework.web.bind.annotation.RestController;
 import com.curso.microservicios.spring.commons.controllers.CommonController;
 import com.curso.microservicios.spring.cursos.models.entity.Curso;
 import com.curso.microservicios.spring.cursos.services.CursoService;
-import com.curso.microservicios.spring.examenes.models.entity.Examen;
 import com.curso.microservicios.spring.generic.alumnos.models.entity.Alumno;
+import com.curso.microservicios.spring.generic.examenes.models.entity.Examen;
 
 @RestController
 public class CursoController extends CommonController<Curso, CursoService> {
