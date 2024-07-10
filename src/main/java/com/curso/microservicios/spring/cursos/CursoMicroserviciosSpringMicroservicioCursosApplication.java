@@ -8,15 +8,16 @@ import io.github.cdimascio.dotenv.Dotenv;
 
 @EnableEurekaClient
 @SpringBootApplication
-@EntityScan({"com.curso.microservicios.spring.generic.alumnos.models.entity",
-	"com.curso.microservicios.spring.cursos.models.entity"})
+@EntityScan({ "com.curso.microservicios.spring.generic.alumnos.models.entity",
+		"com.curso.microservicios.spring.cursos.models.entity",
+		"com.curso.microservicios.spring.generic.examenes.models.entity" })
 public class CursoMicroserviciosSpringMicroservicioCursosApplication {
 
 	public static void main(String[] args) {
 		Dotenv dotenv = Dotenv.load();
-        dotenv.entries().forEach(entry -> {
-            System.setProperty(entry.getKey(), entry.getValue());
-        });
+		dotenv.entries().forEach(entry -> {
+			System.setProperty(entry.getKey(), entry.getValue());
+		});
 		SpringApplication.run(CursoMicroserviciosSpringMicroservicioCursosApplication.class, args);
 	}
 
