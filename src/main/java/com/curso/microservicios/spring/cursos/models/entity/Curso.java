@@ -16,6 +16,7 @@ import javax.persistence.PrePersist;
 import javax.persistence.Table;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
+import javax.validation.constraints.NotEmpty;
 
 import com.curso.microservicios.spring.generic.alumnos.models.entity.Alumno;
 import com.curso.microservicios.spring.generic.examenes.models.entity.Examen;
@@ -28,6 +29,7 @@ public class Curso {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
 
+	@NotEmpty
 	@Column(name = "nombre")
 	private String nombre;
 
